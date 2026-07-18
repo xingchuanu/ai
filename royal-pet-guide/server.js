@@ -179,7 +179,9 @@ const server = createServer(async (req, res) => {
   res.writeHead(404).end("Not Found")
 })
 // 随机端口监听
-server.listen(0, () => {
+// 云服务器部署：可通过环境变量 PORT 指定端口，默认 8899
+const PORT = parseInt(process.env.PORT || "8899", 10)
+server.listen(PORT, "0.0.0.0", () => {
   const port = server.address().port
   console.log(JSON.stringify({ "type": "http_start", "port": port }))
 })

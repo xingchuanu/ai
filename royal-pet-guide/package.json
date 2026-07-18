@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "description": "皇家牧院新生与升学规划助手",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "start": "node server.js"
   }
 }
