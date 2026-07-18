@@ -1,0 +1,19 @@
+{
+  "dxt_version": "0.1",
+  "name": "@aipy-pro/royal-pet-guide",
+  "display_name": "皇家牧院新生与升学规划助手",
+  "version": "1.0.0",
+  "description": "专业热情的学长助手，解答皇家牧院学院校园生活问题，引导升学规划",
+  "author": {"name": "皇家牧院学长团队"},
+  "icon": "icon.svg",
+  "server": {
+    "type": "node",
+    "entry_point": "server.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server.js"],
+      "env": {}
+    }
+  },
+  "keywords": ["embed-webview"]
+}
